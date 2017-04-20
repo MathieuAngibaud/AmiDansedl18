@@ -1,0 +1,19 @@
+AmiDanseBundle\Entity\TypeDanse:
+    type: entity
+    table: null
+    repositoryClass: AmiDanseBundle\Repository\TypeDanseRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '100'
+            unique: true
+        description:
+            type: text
+            nullable: true
+    lifecycleCallbacks: {  }

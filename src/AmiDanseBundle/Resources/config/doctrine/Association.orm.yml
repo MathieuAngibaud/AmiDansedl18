@@ -1,0 +1,25 @@
+AmiDanseBundle\Entity\Association:
+    type: entity
+    table: null
+    repositoryClass: AmiDanseBundle\Repository\AssociationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+            unique: true
+        adress:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+        phonenumber:
+            type: integer
+            unique: true
+    lifecycleCallbacks: {  }

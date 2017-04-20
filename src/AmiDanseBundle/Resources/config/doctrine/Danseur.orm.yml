@@ -1,0 +1,26 @@
+AmiDanseBundle\Entity\Danseur:
+    type: entity
+    table: null
+    repositoryClass: AmiDanseBundle\Repository\DanseurRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '100'
+        firstname:
+            type: string
+            length: '100'
+        sexe:
+            type: boolean
+        email:
+            type: string
+            length: 255
+            unique: true
+        status:
+            type: boolean
+    lifecycleCallbacks: {  }

@@ -1,0 +1,25 @@
+AmiDanseBundle\Entity\Event:
+    type: entity
+    table: null
+    repositoryClass: AmiDanseBundle\Repository\EventRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        place:
+            type: string
+            length: 255
+        date:
+            type: datetimetz
+        hour:
+            type: time
+        description:
+            type: text
+            nullable: true
+    lifecycleCallbacks: {  }

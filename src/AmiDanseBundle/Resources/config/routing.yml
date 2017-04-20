@@ -1,0 +1,3 @@
+ami_danse_homepage:
+    path:     /
+    defaults: { _controller: AmiDanseBundle:Default:index }
